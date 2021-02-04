@@ -10,12 +10,14 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Creamos una barra de navegacion con fondo oscuro -->
-    <nav class="navbar navbar-dark bg-dark">
+    <!-- Creamos una barra de navegacion con fondo oscuro
+     La clase "navbar-expand-lg" sirve para que el menu se vea compacto 
+     en un movil pero completo en PC -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <!-- Ponemos titulo a la barra de navegacion -->
         <a class="navbar-brand" href="#">Z0K3</a>
         <!-- boton para desplegar el menu en modo responsivo -->
-        <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="">
+        <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#entradas_menu">
             <!-- Esto hace que se vean las tres rayas del botón -->
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +25,25 @@
         fijate que el ID coincida con el data-target del
         boton de arriba-->
         <div class="collapse navbar-collapse" id="entradas_menu">
-
+            <!-- Los menus se hacen con listas -->
+            <ul class="navbar-nav">
+                <!-- Cada elemento de la lista es una entrada del menú -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_inicio" >Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_desarrollo_web" >Web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_desarrollo_java" >Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_base_datos" >Bases de Datos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu_contacto" >Contacto</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="container">
@@ -41,7 +61,7 @@
             <p>Bases de Datos</p>
         </div>
         <div id="panel_contacto" class="panel">
-            <p>contacto</p>
+            <p>Contacto</p>
         </div>
     </div>
     <!-- JavaScript -->
