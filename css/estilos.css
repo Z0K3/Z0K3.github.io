@@ -1,0 +1,9 @@
+div.card img
+{
+    background-color:grey;
+    padding: 0.5rem;
+}
+.card-text
+{
+    list-style-type: lower-roman;
+}
